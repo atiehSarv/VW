@@ -66,6 +66,14 @@ public class VWready {
     }
 
     public static void main(String[] args) throws IOException {
+
+        sentenceBreaker w = new sentenceBreaker();
+        String s =  w.sentenceBreaker("fekr");
+        String s2 =  w.sentenceBreaker("eshgh");
+
+        SentenceCleaner w2 = new SentenceCleaner();
+        String ss =  w2.cleanTests("eshghsentences");
+        String ss2 =  w2.cleanTests("fekrsentences");
         VWready vw = new VWready();
         vw.readyForVW();
 
